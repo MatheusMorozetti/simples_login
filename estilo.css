@@ -1,0 +1,84 @@
+*{box-sizing: border-box; margin: 0; padding: 0;}
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    /*background-image: url('../Template/fundo.jpg');*/
+    background-image: url('tela_inicial.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 500px;
+}
+.super
+{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 1px 1px 30px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    transition: ease 0.5;
+    position: relative;
+}
+
+.assinatura
+{
+    position: fixed;
+    font-family: 'Easy Speech'; /*Baixa a fonte caso não tenha*/
+    top: 70px;
+    left: 450px;
+}
+.assinatura h1#texto{font-size: 60px; }
+
+form
+{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+form .grupo_formulario{position: relative;}
+
+form .grupo_formulario input[type=email],form .grupo_formulario input[type=password], form .grupo_formulario input[type=submit] 
+{
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 6px;
+    border-radius: 30px 10px 30px 10px;
+    border: none;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+form .grupo_formulario input[type=email],form .grupo_formulario input[type=password]
+{
+    box-shadow: 1px 1px 7px 3px rgba(255, 255, 255, 1);
+}
+
+form .grupo_formulario input[type=submit]
+{
+    border: 1px solid #fff;
+}
+.grupo_formulario input[type=submit]:hover
+{
+    box-shadow: 1px 1px 7px 3px rgba(255, 255, 255, 1);
+}
+
+/*
+form .grupo_formulario input:focus ~ input[type=value],
+form .grupo_formulario input:valid ~ input[type=value] 
+{
+    top: -10px;
+    left: 0;
+    font-size: 12px;
+}*/
+
+
+::placeholder{color: white;}
+.super h1{font-weight: 600; text-align: center; color: #fff; padding: 10px; font-size: 40px;}
+.super hr{width: 100%; border: 1px solid white;}
+.super p{padding: 15px; color: white; text-align: center; font-size: 18px;}
+.super p a{color: #ff0000; text-decoration: none;}
